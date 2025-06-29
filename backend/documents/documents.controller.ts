@@ -1,7 +1,7 @@
 import { Controller, Post, Get, UseInterceptors, UploadedFile, HttpException, HttpStatus, Logger } from '@nestjs/common';
 import { FileInterceptor } from '@nestjs/platform-express';
 import { DocumentsService } from './documents.service';
-import { AnalysisDataDto, AnalyzeDocumentResponseDto } from './dto/analyze-document.dto';
+import { AnalyzeDocumentResponseDto } from './dto/analyze-document.dto';
 
 @Controller('api/documents')
 export class DocumentsController {
