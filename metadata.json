@@ -1,0 +1,6 @@
+{
+  "name": "Copy of M&A Document Analyzer",
+  "description": "An AI-powered tool to help lawyers quickly extract key deal terms from M&A agreements. Upload a PDF to analyze its contents and receive a structured summary of important information.",
+  "requestFramePermissions": [],
+  "prompt": ""
+}
