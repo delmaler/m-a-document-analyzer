@@ -7,8 +7,7 @@ A full-stack application that analyzes Mergers & Acquisitions documents using AI
 
 - Node.js (v18 or higher)
 - npm or yarn
-- API keys for:
-  - [Anthropic Claude](https://console.anthropic.com/)
+- API keys for Claude
 
 ## Installation
 
@@ -59,5 +58,39 @@ A full-stack application that analyzes Mergers & Acquisitions documents using AI
    ```bash
    npm run backend:start
    ```
+
+## Things to improve
+
+- Implement different features or find a library in JS to mimic frameworks used for developing agents such as chaining LLM output and ensuring LLM output format (or consider using Python for backend)
+- Use RAG with a vector database to improve responses
+- Add e2e testing for endpoints
+- Add unit tests for services
+- Use fuzzing for testing
+- Add docx support (currently having issues with mimetype)
+- Add PDF OCR for scanned documents
+- Implement a rating system
+- Generate suggestions to improve existing clauses
+- Add a scraper to get K-8 reports about M&A for testing
+- General code cleanliness and refactoring
+- Add API rate limiting
+- Add legal database integration
+
+
+## Architecture Design
+
+### using multiple calls to CLAUDE to validate JSON output
+### File Upload Architecture
+ Direct file upload to backend with FormData
+
+###  using DTO
+   ensuring that the output from the llm is in the correct format
+###  API Error Handling
+ Custom ApiError class with structured error responses
+
+
+### Environment Configuration
+Using .env files with Vite's import.meta.env for api keys and flaggs
+
+
 
 
